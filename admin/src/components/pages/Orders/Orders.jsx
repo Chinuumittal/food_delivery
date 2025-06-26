@@ -4,7 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { assets } from '../../../assets/assets';
 
-const Orders = ({ url = "http://localhost:4000" }) => {
+const Orders = ({ url = "https://food-delivery-1-vgsl.onrender.com" }) => {
   const [orders, setOrders] = useState([]);
 
   const fetchAllOrders = async () => {
