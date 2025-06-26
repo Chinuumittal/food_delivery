@@ -1,0 +1,141 @@
+.place-order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.place-order-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.place-order-left .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 16px;
+}
+
+.place-order-left .multi-fields input {
+  flex: 1;
+}
+
+.place-order-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px; /* ✅ Limit the width */
+}
+
+.cart-total {
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  font-size: 14px;
+}
+
+.cart-total h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0; /* 🔽 Reduced spacing between rows */
+  font-size: 14px;
+}
+
+.cart-total hr {
+  margin: 4px 0; /* 🔽 Reduce horizontal line spacing */
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.cart-total button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-total button:hover {
+  background-color: #e6494d;
+}
+.payment-method {
+  margin-top: 20px;
+}
+
+.payment-method p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-options label {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.payment-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-options input[type="radio"]:checked + span,
+.payment-options input[type="radio"]:checked ~ label {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.payment-options label:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    width: 100%;
+  }
+
+  .place-order-left .multi-fields {
+    flex-direction: column;
+  }
+}

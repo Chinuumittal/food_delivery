@@ -1,0 +1,64 @@
+.list-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Grid layout for rows */
+.list-table-format {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 1.5fr 1fr 0.5fr; /* More width */
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header row */
+.list-table-format.title {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Image styles */
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Action button (X) */
+.delete-button {
+  color: crimson;
+  font-weight: bold;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .list-table-format {
+    grid-template-columns: 60px 1fr 1fr 1fr 0.5fr;
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .list-table-format img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .delete-button {
+    font-size: 16px;
+  }
+}
