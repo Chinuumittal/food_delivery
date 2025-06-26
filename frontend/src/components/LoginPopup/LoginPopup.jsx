@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const LoginPopup = ({ SetShowLogin }) => {
   const [currState, setCurrState] = useState("Login");
   const { setToken } = useContext(StoreContext);
-  const url = "http://localhost:4000";
+  const url = "https://food-delivery-1-vgsl.onrender.com";
 
   const [data, setData] = useState({
     name: "",
