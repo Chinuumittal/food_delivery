@@ -6,7 +6,7 @@ import Add from './components/pages/Add/Add'
 import List from './components/pages/List/List'
 import Orders from './components/pages/Orders/Orders'
 const App = () => {
-  const url="http://localhost:4000"
+  const url="https://food-delivery-1-vgsl.onrender.com"
   return (
     <div>
       <Navbar/>
