@@ -6,7 +6,7 @@ import userModel from "../models/userModels.js"; // Ensure filename is correct
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const frontend_url = "http://localhost:5173";
+const frontend_url = "https://food-delivery-front-lxfe.onrender.com/";
 console.log("Stripe Secret:", process.env.STRIPE_SECRET_KEY);
 
 // Placing user order
