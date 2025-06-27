@@ -81,7 +81,41 @@ food-delivery-app/
 
 ## ⚙️ Setup Instructions (Locally)
 
-1. **Clone the repo**
+### 1. Clone the repo
 ```bash
 git clone https://github.com/your-username/food_delivery.git
 cd food_delivery
+```
+### 2. Setup Backend
+
+```bash
+cd backend
+npm install
+```
+
+### 📁 3. Create .env in backend folder 
+```bash
+# MongoDB connection URI
+MONGO_URL=your_mongodb_connection_string
+
+# JWT secret for user authentication
+JWT_SECRET=your_jwt_secret_key
+
+# Stripe secret key for payments
+STRIPE_SECRET_KEY=your_stripe_secret_ke
+```
+
+### 4. 🧑‍🍳 Setup Frontend (User Side)
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+### 4. 🧑‍🍳 Setup Admin (Admin Side)
+
+```bash
+cd ../admin
+npm install
+npm run dev
+```
