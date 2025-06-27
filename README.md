@@ -86,7 +86,7 @@ food-delivery-app/
 git clone https://github.com/your-username/food_delivery.git
 cd food_delivery
 ```
-### 2. Setup Backend
+### 2. 🧑‍🍳 Setup Backend
 
 ```bash
 cd backend
@@ -94,7 +94,7 @@ npm install
 npm run server(After creating .env)
 ```
 
-### 📁 3. Create .env in backend folder 
+### 3. 📁 Create .env in backend folder 
 ```bash
 # MongoDB connection URI
 MONGO_URL=your_mongodb_connection_string
