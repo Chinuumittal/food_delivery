@@ -91,6 +91,7 @@ cd food_delivery
 ```bash
 cd backend
 npm install
+npm run server(After creating .env)
 ```
 
 ### 📁 3. Create .env in backend folder 
