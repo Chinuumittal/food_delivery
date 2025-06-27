@@ -5,6 +5,9 @@ import { Routes,Route} from 'react-router-dom'
 import Add from './components/pages/Add/Add'
 import List from './components/pages/List/List'
 import Orders from './components/pages/Orders/Orders'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const App = () => {
   const url="https://food-delivery-1-vgsl.onrender.com"
   return (
@@ -20,6 +23,7 @@ const App = () => {
 
         </Routes>
       </div>
+        <ToastContainer position="top-right" autoClose={3000} />
     </div>
   )
 }
