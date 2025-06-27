@@ -49,7 +49,7 @@ food-delivery-app/
 │   ├── routes/             # foodRoutes.js, orderRoutes.js, userRoutes.js
 │   ├── controllers/        # Controller logic for routes
 │   ├── models/             # Mongoose schemas: Food, Order, User
-│   └── index.js            # App entry point
+│   └── server.js            # App entry point
 ```
 
 ---
