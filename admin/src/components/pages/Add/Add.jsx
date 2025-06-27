@@ -2,6 +2,8 @@ import React, { useState,useEffect } from 'react';
 import './Add.css';
 import { assets } from '../../../assets/assets';
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Add = () => {
     const url="https://food-delivery-1-vgsl.onrender.com"
@@ -30,7 +32,7 @@ const Add = () => {
     const response = await axios.post(`${url}/api/food/add`, formData);
 
     if (response.data.success) {
-      alert("Product added successfully!");
+      toast.success("✅ Product added successfully!");
 
       // Reset form fields
       setData({
@@ -41,11 +43,11 @@ const Add = () => {
       });
       setImage(false); // or `null` if you're using null initially
     } else {
-      alert("Failed to add product.");
+       toast.error("❌ Failed to add product.");
     }
   } catch (err) {
     console.error("Error uploading product:", err);
-    alert("Something went wrong. Please try again.");
+    toast.error("⚠️ Something went wrong. Please try again.");
   }
   }
 
