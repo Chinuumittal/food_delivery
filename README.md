@@ -11,8 +11,8 @@ Built using **React**, **Node.js**, **Express**, **MongoDB**, and **Stripe**.
 
 ## 🌐 Live Links
 
-- 🧑‍🍳 **User Site**: [https://food-delivery-front-lxfe.onrender.com](https://your-user-site.onrender.com)  
-- 🧑‍💼 **Admin Panel**: [https://food-delivery-admin-eft0.onrender.com](https://your-admin-site.onrender.com)  
+- 🧑‍🍳 **User Site**: [https://food-delivery-front-lxfe.onrender.com](https://food-delivery-front-lxfe.onrender.com)  
+- 🧑‍💼 **Admin Panel**: [https://food-delivery-admin-eft0.onrender.com](https://food-delivery-admin-eft0.onrender.com)  
 - 🔗 **Backend API**: [https://food-delivery-1-vgsl.onrender.com](https://food-delivery-1-vgsl.onrender.com)
 
 ---
