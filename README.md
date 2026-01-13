@@ -83,7 +83,7 @@ food-delivery-app/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/food_delivery.git
+git clone https://github.com/Chinuumittal/food_delivery.git
 cd food_delivery
 ```
 ### 2. 🧑‍🍳 Setup Backend
